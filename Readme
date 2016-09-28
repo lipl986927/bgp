@@ -1,3 +1,10 @@
+To install :
+
+	pip install bgp 
+
+# Depends on scapy package
+
+
 To run the tool
 
 	sudo python userBgp.py vlan1001.cfg

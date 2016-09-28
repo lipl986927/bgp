@@ -1,7 +1,7 @@
 from setuptools import find_packages, setup
 import sys
 
-VERSION = '0.1'
+VERSION = '0.2'
 
 scapy_package = 'scapy-python3' if sys.version_info.major==3 else 'scapy'
 
@@ -13,7 +13,9 @@ setup(name="Bgp",
       platforms=["any"],  # or more specific, e.g. "win32", "cygwin", "osx"
       url="http://github.com/sudks/bgp",
       packages=find_packages(),
+      package_data={'bgp': ['vlan1001.cfg']},
+      #include_package_data = True,
       install_requires=[scapy_package],
-      download_url='https://github.com/sudks/bgp/tarball/' + VERSION,
+      #download_url='https://github.com/sudks/bgp/tarball/' + VERSION,
       keywords=['tcp','bgp', 'scapy', 'network', 'dissect', 'packets']
       )

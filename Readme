@@ -1,0 +1,8 @@
+To run the tool
+
+	sudo python userBgp.py vlan1001.cfg
+
+Make sure the cfg file has the correct Interface configured to send the packets
+
+
+

@@ -1,6 +1,7 @@
 from setuptools import find_packages, setup
+import sys
 
-VERSION = 0.1
+VERSION = '0.1'
 
 scapy_package = 'scapy-python3' if sys.version_info.major==3 else 'scapy'
 
